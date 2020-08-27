@@ -1,3 +1,2 @@
 # hello-world
-Test for ITM 352
-Hi! I'm Josh Rio!
+Hi! I'm Josh Rio! I am a sophomore planning on majoring in Management Information systems, Finance, and Accounting.
