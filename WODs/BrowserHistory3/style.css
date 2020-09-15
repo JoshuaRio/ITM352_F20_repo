@@ -1,0 +1,49 @@
+body{
+    color: darkblue;
+    margin: 10px 50px 10px 50px;
+    width: 950px;
+    background-color: ivory;
+}
+
+h1, h2{
+    font-family: 'Oswald', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', serif;
+}
+
+img{
+    float: left;
+}
+
+.first{
+    float: left;
+    width: 300px;
+    padding: 1em;
+}
+
+.second{
+    float: right;
+    width: 300px;
+    padding: 1em;
+}
+
+.third{
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 1em;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline;
+}
+
+#bar a{
+    margin-left: 75px;
+    margin-right: 75px;
+}

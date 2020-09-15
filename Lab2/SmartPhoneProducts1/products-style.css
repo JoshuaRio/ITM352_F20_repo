@@ -1,6 +1,7 @@
 body{
     width: 800px;
     margin: 0 auto;
+    background-color:rgb(83, 20, 20);
 }
 
 body.div{
@@ -34,6 +35,13 @@ main{
     justify-content: space-around;
     background: url("images/phone_globe.jpg");
     background-repeat: no-repeat;
+    border: black 2px;
+}
+
+.HeadClose h1{
+    color: black;
+    text-align: center;
+    background-color: white;
 }
 
 
