@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello!
+    <script>
+        var first_name = "Josh";
+        var middle_name = "Mariano";
+        var last_name = "Rio";
+        var full_name = first_name + " " + middle_name + " " + last_name;
+        var formatted_name = full_name + "<br>" + first_name[0] + "." + last_name[0] + ".";
+        document.write(formatted_name);
+        document.write("<b>" + first_name + "</br" + "<i>" + middle_name + "</i>" + "<font size = 7>" + last_name + "</font>");
+        amount = 365.00;
+        tax = 0.0413 * amount;
+        var f = tax.toFixed(2);
+    </script>
+    <div id = "ageDiv"></div>
+    <div id = "cash"></div>
+</body>
+</html>
+
+<script>
+    var number_of_kids;
+    age = 18;
+    number_of_kids = 3;
+    document.getElementById("ageDiv").innerHTML = "I want "
+    + number_of_kids * age + " kids!";
+    document.getElementById("cash").innerHTML = "The tax on your " + full_name +"'s" + " bill is " + f;
+</script>
