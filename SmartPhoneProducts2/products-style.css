@@ -1,0 +1,47 @@
+body{
+    width: 800px;
+    margin: 0 auto;
+    background-color:rgb(83, 20, 20);
+}
+
+body.div{
+    border: 5px solid black;
+    display: flex;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+p{
+    text-align: center;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: url("images/phone_globe.jpg");
+    background-repeat: no-repeat;
+    border: black 2px;
+}
+
+.HeadClose h1{
+    color: black;
+    text-align: center;
+    background-color: white;
+}
+
+
