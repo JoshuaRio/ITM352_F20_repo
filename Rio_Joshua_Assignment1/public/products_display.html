@@ -1,0 +1,79 @@
+<script>
+
+    var products = 
+    [
+    {
+    "brand" : "Tie-Die",
+    "price" : 44.95,
+    "image" : "https://img.hollisterco.com/is/image/anf/KIC_322-2531-1157-208_prod1?$product-medium-hol$"
+    },
+    {
+    "brand" : "Dri-Fit",
+    "price" : 25.50,
+    "image" : "https://static.augustasportswear.com/product/695HBM_TRR_aws_640.jpg"
+    },
+    {
+    "brand" : "Pullover",
+    "price" : 35.00,
+    "image" : "https://assets.adidas.com/images/w_385,h_385,f_auto,q_auto:sensitive,fl_lossy/ad6244b8990a473190e2a93800b431f3_9366/essentials-3-stripes-pullover-hoodie.jpg"
+    },
+    {
+    "brand" : "Designer",
+    "price" : 45.00,
+    "image" : "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQPS_F3d98kV2Ntog86W1Sve-yAV-Ds9PgeM8GYeVtxZgPh6UcEe3jzXi3WyrmNDke3JSmts-FTcKc&usqp=CAc"
+    },
+    {
+    "brand" : "Polo",
+    "price" : 75.00,
+    "image" : "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQzbZGkaCv3BZL7h141Ggx3O_hErp3PVrMUDVCI3AdYGFCsL86voesSQHPdReInhvddHnM4puQn0Q&usqp=CAc"
+    }
+]
+    
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./products-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodie Resale</title>
+</head>
+
+<body>
+    <form action="process_form" method = "POST">
+        <h1>Joshua's Hoodie Resale Store</h1>
+    <div>
+        <main>
+
+
+<script>
+    //Taken code from wod3. Allows us to use the array above to print out everything in it using only a for loop
+    for(i = 0; i <= products.length; i++) {
+
+    document.write(
+    `<section class="item">
+        <h2>${products[i].brand}</h2> 
+        <p>$${products[i].price}</p> 
+        <label>Quantity</label>
+        <input type="text" placeholder="0" name ="quantity${i}" onkeyup = "checkQuantityTextbox(this);">
+        <img src= ${products[i].image}>
+    </section>      
+    `);
+    }
+    
+</script>
+
+        </main>
+    </div>
+    
+    <footer>Hoodies and Goodies!
+        <br>
+        <input type="submit" value = "Purchase!">
+    </footer>
+    
+</body>
+
+</html>
