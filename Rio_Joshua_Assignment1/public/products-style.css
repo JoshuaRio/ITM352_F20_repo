@@ -54,7 +54,7 @@ main {
 }
 
 
-div {
+div.text {
     border: 5px solid black;
     display: flex;
     width: fit-content;
@@ -122,4 +122,14 @@ section input {
         border: none;
         padding: 5px;
         width: 201.5px;
+    }
+
+    p.top{
+        color: black;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    div.why{
+        background-color:white;
     }
