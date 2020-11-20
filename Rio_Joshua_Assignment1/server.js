@@ -33,6 +33,7 @@ app.post("/process_quantity_form", function (request, response) {
 
 function isNonNegInt(stringToCheck, returnErrors = false) {
     errors = []; // assume no errors at first
+    if(stringToCheck ==""){stringToCheck = 0;}
     if (Number(stringToCheck) != stringToCheck) errors.push('Not a number!'); // Check if string is a number value
     if (stringToCheck < 0) errors.push('Negative value!'); // Check if it is non-negative
     if (parseInt(stringToCheck) != stringToCheck) errors.push('Not an integer!'); // Check that it is an integer
