@@ -1,0 +1,24 @@
+{ "jmrio":
+    {
+        "username": "jmrio",
+        "email": "jmrio@hawaii.edu",
+        "password": "password",
+        "repeat_password": "password",
+        "fullname":"Joshua Rio"
+    }, "itm352": {
+        "username":"itm352",
+        "password":"gradeIt",
+        "email":"studentgrader@hawaii.edu",
+        "fullname":"Student grade"
+    }, "test": {
+        "username": "test",
+        "email": "test@hawaii.edu",
+        "password": "password",
+        "repeat_password": "password",
+        "fullname":"Test Account"
+    }
+
+
+}
+
+

@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    <script>
+    //Following code is taken from code examples
+        window.onload = function () {
+          var urlParams = new URLSearchParams(window.location.search);
+          if (urlParams.has("username")) { 
+            f.fullname.value = urlParams.get("fullname"); 
+            f.username.value = urlParams.get("username"); 
+            f.email.value = urlParams.get("email"); 
+            f.password.value = urlParams.get("password"); 
+            f.repeat_password.value = urlParams.get("repeat_password"); 
+            if (urlParams.has("username_error")) { 
+              username_label.innerHTML = urlParams.get("username_error");
+            }
+            if (urlParams.has("fullname_error")) {  
+              fullname_label.innerHTML = urlParams.get("fullname_error");
+            }
+            if (urlParams.has("email_error")) { 
+              fullname_label.innerHTML = urlParams.get("email_error");
+            }
+            checkpassword();
+          }
+        }
+      </script>
 <head>
 
     <meta charset="UTF-8">

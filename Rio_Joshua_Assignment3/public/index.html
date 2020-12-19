@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+        text-align: center;
+        background: lightgoldenrodyellow;
+        }
+        img {
+            border: 1px solid black;
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded border */
+            padding: 5px;
+            /* Some padding */
+            width: 150px;
+            /* Set a small width */
+        }
+
+        /* Add a hover effect (blue shadow) */
+        img:hover {
+            box-shadow: 0 0 5px 1px black;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Clothes Home</title>
+    <script src="./functions.js"></script> 
+    <script>
+        //Following code is from Assignment 3 examples
+    var products_data;
+    loadJSON('get_products_data', function(response) {
+         // Parsing JSON string into object
+         products_data = JSON.parse(response);
+    });
+    var this_product_key = '';
+    </script>
+</head>
+<body>
+    <h1>Retail clothing!</h1>
+   
+<a href="./products_display.html"> <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQr9D-6mpJn5K2lepRRo7iexpVHJSiNw-pYSN9sWBdS_sLu9HkGSTmSwcvElZopojWTTEn_U7FjEh8&usqp=CAc" alt="" height="50%" width="50%"></a>
+<br><h1>Click the image to enter the store!</h1>
+
+</body>
+</html>
